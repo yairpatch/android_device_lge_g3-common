@@ -186,6 +186,10 @@ PRODUCT_PACKAGES += \
     init.baseband.sh \
     init.sensors.sh \
     ueventd.g3.rc
+    
+    PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.codecremote=false \
+    media.stagefright.legacyencoder=true
 
 # Thermal
 PRODUCT_COPY_FILES += \
